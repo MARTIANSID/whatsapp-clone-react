@@ -6,12 +6,12 @@ export default function Sidebar() {
   const [activeKey, setActivityKey] = useState("conversation");
   return (
     <div style={{ width: "250px" }} className="d-flex flex-column">
-      <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
+      <Tab.Container activeKey={activeKey} onSelect={setActivityKey} className="">
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Item>
             <Nav.Link eventKey="conversations">Conversations</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item> 
             <Nav.Link eventKey="contacts">Contacts</Nav.Link>
           </Nav.Item>
         </Nav>
